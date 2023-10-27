@@ -1,3 +1,9 @@
+:root{
+    --home-color:rgb(3, 27 , 63);
+    --bron-color:rgba(168,134,111);
+    --bron-white: rgba(237 , 209 ,188)
+}
+
 .who-us{
     display: flex;
     flex-wrap: wrap;
@@ -5,6 +11,7 @@
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 80px;
+    transition: all 1s ease-in-out;
 }
 .who-us .title { 
     text-align: end;
@@ -12,7 +19,7 @@
 }
 .who-us .title h4 {
     font-size: 50px;
-    color:#40128B;
+    color:var(--home-color);
     text-align: center;
 }
 .who-us .title h4 img {
@@ -52,7 +59,7 @@
     margin-right: 5px;
 }
 .who-us .who-info .info .i-title i {
-    color:#40128B;
+    color:var(--home-color);
     font-size: 20px;
 }
 

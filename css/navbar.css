@@ -1,5 +1,8 @@
 
-body{
+:root{
+    --home-color:rgb(3, 27 , 63);
+    --bron-color:rgba(168,134,111);
+    --bron-white: rgba(237 , 209 ,188)
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -14,7 +17,7 @@ nav .show ul li  {
 }
 nav ul li a{
     transition: all 0.5s ease!important;
-    color: white!important;
+    color: var(--bron-color)!important;
     font-size: 20px!important;
 
 }

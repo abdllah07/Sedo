@@ -1,4 +1,13 @@
+:root{
+    --home-color:rgb(3, 27 , 63);
+    --bron-color:rgba(168,134,111);
+    --bron-white: rgba(237 , 209 ,188)
+}
+
+
 .what-us{
+    position: relative;
+    transition: all 0.5s ease;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -9,6 +18,7 @@
 
 .what-us .vision { 
     width: 20%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +26,7 @@
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     padding: 10px;
     border-radius: 20px;
-    transition: all 0.5s ease-in;
+    transition: all 0.7s ease-in;
 }
 
 
@@ -27,10 +37,18 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.what-us .vision h2 {
+    color: var(--bron-color);
 
+}
+
+.what-us .vision h6 {
+    color: var(--bron-white);
+
+}
 .what-us .vision i {
     font-size: 25px;
-    color: #40128B;
+    color: var(--home-color);
 }
 .what-us .vision h2{
     font-weight: bolder;

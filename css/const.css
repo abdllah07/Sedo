@@ -1,7 +1,8 @@
 :root{
-    --home-color:#40128B;
+    --home-color:rgb(3, 27 , 63);
+    --bron-color:rgba(168,134,111);
+    --bron-white: rgba(237 , 209 ,188)
 }
-
 *{
     padding: 0;
     margin: 0;
@@ -17,17 +18,17 @@
     padding: 10px;
     background-color: transparent;
     border-radius: 10px;
-    border-color:#40128B;
+    border-color:var(--home-color);
     transition: all 1s ease;
 }
 
 .buttons-more button:hover{
-background-color: #40128B;
-border-color: white;
-color: white;
+background-color: var(--home-color);
+border-color: var(--bron-color);
+color: var(--bron-color);
 }
 .buttons-more button:hover  a {
-    color:white;
+    color:var(--bron-color);
 }
 .buttons-more button:hover  i {
     transform: translateX(-2px);

@@ -1,5 +1,10 @@
+:root{
+    --home-color:rgb(3, 27 , 63);
+    --bron-color:rgba(168,134,111);
+    --bron-white: rgba(237 , 209 ,188)
+}   
 footer{
-    background-color: #574279;
+    background-color: var(--home-color);;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -35,11 +40,11 @@ footer .discription{
 }
 footer .discription h2{
     font-weight: bolder;
-    color: white;
+    color: var(--bron-color);
 }
 
 footer .icons i {
-    color: white;
+    color: var(--bron-color);
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;

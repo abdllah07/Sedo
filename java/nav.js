@@ -1,19 +1,29 @@
-// let sticky = document.querySelector(".navbar");
-// let endHeader = document.querySelector(".carousel-indicators");
+let who = document.querySelector(".who-us");
+let header = document.querySelector("header");
+let what = document.querySelector(".what-us");
+let serv = document.querySelector(".services");
 
-// window.onscroll = function () {
+window.onscroll = function () {
     
-//     if (window.scrollY >= endHeader.offsetTop + 300) {
-//         sticky.style.backgroundColor = sticky.dataset.backgroundColor; 
+ 
+    if (window.scrollY >= header.offsetTop + 100) {
+        who.style.opacity = who.dataset.opacity; 
 
-//     }
-//     // if (window.scrollY >= company.offsetTop - 250) {
-//     //   company_header.style.opacity = company_header.dataset.opacity;
-//     //   company_box1.style.left = company_box1.dataset.left;
-//     //   company_box2.style.right = company_box2.dataset.right;
-//     //   company_box3.style.opacity = company_box3.dataset.opacity;
-//     // }
-//   }
+    }
+    if (window.scrollY >= who.offsetTop + 100) {
+        what.style.left = what.dataset.left; 
+
+    }
+    if (window.scrollY >= what.offsetTop + 100) {
+        serv.style.opacity = serv.dataset.opacity; 
+
+    }
+
+
+
+
+}
+
 
 
 
@@ -24,7 +34,7 @@ $(document).ready(function(){
 	  if (scroll > 900) {
       $(".navbar").css("transition" , "1s");
 
-	    $(".navbar").css("background" , "#40128B");
+	    $(".navbar").css("background" , "rgb(3, 27 , 63)");
       $(".navbar").css("width" , "100%");
 
 	  }
