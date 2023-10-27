@@ -1,0 +1,63 @@
+.what-us{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-top: 180px;
+    margin-bottom: 80px;
+}
+
+.what-us .vision { 
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+
+
+.what-us .vision i , 
+.what-us .vision h2 , 
+.what-us .vision h6 , 
+.what-us .vision p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.what-us .vision i {
+    font-size: 25px;
+    color: #40128B;
+}
+.what-us .vision h2{
+    font-weight: bolder;
+}
+.what-us .vision p {
+    text-align:center;
+    font-weight: 700;
+}
+
+.what-us .vision:hover {
+    transform: translateY(-10px);
+}
+
+
+@media (max-width: 900px){
+    .what-us .vision {
+        width: 30%;
+    }
+}
+@media (max-width: 650px){
+    .what-us .vision {
+        width: 40%;
+    }
+}
+
+@media (max-width: 450px){
+    .what-us .vision {
+        width: 80%;
+    }
+}

@@ -1,0 +1,76 @@
+.who-us{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.who-us .title { 
+    text-align: end;
+    margin-bottom:50px;
+}
+.who-us .title h4 {
+    font-size: 50px;
+    color:#40128B;
+    text-align: center;
+}
+.who-us .title h4 img {
+    width: 50px;
+}
+.who-us .title h4 , p { 
+    font-weight: bold;
+}
+
+.who-us .who-info .images img{
+    width: 100%;
+    border-radius: 10px;
+    filter: brightness(0.3);
+}
+
+
+.who-us .who-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.who-us .who-info .info{
+    width: 50%;
+    margin-left: 20px;
+
+}
+
+.who-us .who-info .info .i-title {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top:10px;
+    
+}
+.who-us .who-info .info .i-title p {
+    margin-right: 5px;
+}
+.who-us .who-info .info .i-title i {
+    color:#40128B;
+    font-size: 20px;
+}
+
+.who-us .who-info .images{
+    width: 30%;
+}
+
+
+
+@media (max-width: 900px){
+    .who-us .who-info .info{
+        width: 80%;
+    }
+    .who-us .who-info .images{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .who-us .who-info {
+        flex-direction: column-reverse;
+    }
+}
