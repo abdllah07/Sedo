@@ -5,7 +5,9 @@
     --bron-white: rgba(237 , 209 ,188)
 }
 
-
+nav{
+    background-color: var(--home-color);
+}
 
 .navbar-expand-lg .navbar-collapse {
     justify-content: end;

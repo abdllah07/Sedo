@@ -18,14 +18,18 @@ window.onscroll = function () {
         serv.style.opacity = serv.dataset.opacity; 
 
     }
-
-
-
-
 }
 
 
 
+
+$(function () {
+    $("#nav-icon").click(function () {
+      console.log("hi");
+      $("nav").css("background-color", "rgb(3, 27 , 63)")
+
+    });
+  });
 
 
 $(document).ready(function(){
