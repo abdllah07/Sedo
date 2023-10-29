@@ -6,7 +6,7 @@ let serv = document.querySelector(".services");
 window.onscroll = function () {
     
  
-    if (window.scrollY >= header.offsetTop + 100) {
+    if (window.scrollY >= header.offsetTop - 100) {
         who.style.opacity = who.dataset.opacity; 
 
     }
@@ -16,6 +16,15 @@ window.onscroll = function () {
     }
     if (window.scrollY >= what.offsetTop + 100) {
         serv.style.opacity = serv.dataset.opacity; 
+
+    }
+}
+
+window.onload = function () {
+    
+ 
+    if (window.scrollY >= header.offsetTop ) {
+        who.style.opacity = who.dataset.opacity; 
 
     }
 }
