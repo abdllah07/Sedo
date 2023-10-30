@@ -1,0 +1,107 @@
+:root{
+    --home-color:rgb(3, 27 , 63);
+    --bron-color:rgba(168,134,111);
+    --bron-white: rgba(237 , 209 ,188)
+}
+
+.blogs{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blogs a {
+    text-decoration: none;
+    width: 30%;
+    margin-top: 20px;
+}
+.blogs a:hover .blog-one .info .detail{
+    color: var(--home-color);
+}
+.blogs a .blog-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.blogs a .blog-one .img img{
+    max-width: 90px;
+    height: 144px;
+    object-fit: cover;
+}
+.blogs a .blog-one .info{
+    width: 70%;
+}
+.blogs a .blog-one .info .title , 
+.blogs a .blog-one .info .date , 
+.blogs a .blog-one .info .title , 
+.blogs a .blog-one .info .disc ,
+.blogs a .blog-one .info .detail {
+    margin-right: 20px;
+    text-align: end;
+    overflow: hidden;
+    
+}
+.blogs a .blog-one .info h4{
+    font-size: 25px;
+    color:var(--home-color);
+    margin-bottom: 20px;
+}
+.blogs a .blog-one .info .date {
+    color:var(--bron-color);
+}
+.blogs a .blog-one .info .disc{
+    color:var(--home-color);
+
+}
+.blogs a .blog-one .info .detail{
+    color:var(--bron-color);
+    transition: all 0.5s ease;
+    font-weight:bold;
+}
+
+.blogs a .blog-one .info .date ,
+.blogs a .blog-one .info .disc,
+.blogs a .blog-one .info .detail{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.blogs a .blog-one .info .date i , 
+.blogs a .blog-one .info .detail i {
+    margin-left: 10px;
+    font-size: 15px;
+    
+}
+
+
+@media (max-width:1010px){
+    .blogs a {
+        text-decoration: none;
+        width: 50%;
+        margin-top: 20px;
+        border-bottom: 1px solid var(--home-color);
+
+    }
+}
+
+@media (max-width:660px){
+    .blogs a {
+        text-decoration: none;
+        width: 90%;
+        margin-top: 20px;
+        border-bottom: 1px solid var(--home-color);
+    }
+
+    .blogs a .blog-one .img img{
+        max-width: 200px;
+    }
+    .blogs a .blog-one .info{
+        width: 90%;
+    }
+}
