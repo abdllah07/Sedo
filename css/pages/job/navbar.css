@@ -6,11 +6,12 @@
 }
 
 .nav .logo {
-  display: inline-block;
+  display: inline;
+  float: right;
+  font-size: 18px;
   position: absolute;
-  left: 10px;
-  top: 0px;
-  z-index: 2;
+  top: 0;
+  right: 0;
 }
 .nav .logo img{
   width: 70px;
