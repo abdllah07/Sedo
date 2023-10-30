@@ -35,6 +35,9 @@
     display: inline;
     float: right;
     font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .nav > .nav-links > a {
