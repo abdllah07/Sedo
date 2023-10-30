@@ -6,12 +6,11 @@
 }
 
 .nav .logo {
-  display: inline;
-  float: right;
-  font-size: 18px;
+  display: inline-block;
   position: absolute;
-  top: 0;
-  right: 0;
+  left: 10px;
+  top: 0px;
+  z-index: 2;
 }
 .nav .logo img{
   width: 70px;
@@ -35,6 +34,9 @@
   display: inline;
   float: right;
   font-size: 18px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .nav > .nav-links > a {
