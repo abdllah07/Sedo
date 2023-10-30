@@ -67,3 +67,13 @@ background-color:burlywood;
 .services .serv:hover  h5 {
     color: white;
 }
+
+@media (max-width: 768px) {
+    .services .serv {
+        width: 300px;
+    }
+    .services{
+        margin-left: 0;
+        margin-right: 0;
+    }
+  }
