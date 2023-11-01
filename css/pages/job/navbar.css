@@ -50,7 +50,7 @@
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
 }
 
 .nav > #nav-check {
