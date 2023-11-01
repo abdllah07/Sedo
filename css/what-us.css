@@ -3,47 +3,110 @@
     --bron-color:rgba(168,134,111);
     --bron-white: rgba(237 , 209 ,188)
 }
-
+.what-us  button {
+    background-color: white;
+}
 
 .what-us{
     position: relative;
     transition: all 0.5s ease;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     margin-top: 180px;
     margin-bottom: 80px;
 }
-
-.what-us .vision { 
-    width: 20%;
-
+.what-us .right{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: end;
+    width: 30%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.what-us  .left{
+    margin: auto;
+    display: flex;
+    height: auto;
+}
+.what-us .vis-btn{ 
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 2px solid #f6f5f5;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    transition: 2s;
+    background-image: url("../images/back-black.png");
+    background-position:  center left; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+.what-us .vis-btn .vision{
+    transition: all 0.5s ease;
+    text-align: end;
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.what-us .vis-btn .vision .v-icon{
+
+}
+.what-us .vision::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 20px;
+    background-color: #ededed3a;
+    left: 50%;
+    top: 50%;
+    z-index: -999;
+    transform: translate(-50%, -50%);
+}
+
+.what-us .vision:hover::after{
+    width: 101%;
+    height: 101%;
+    transition: all 0.5s ease;
+}
+.what-us .vision-left{
+    width: 60%;
+    display: none;
+    height: fit-content;
+    margin: 10px auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: var(--bron-white) 0px 30px 20px -20px;
     padding: 10px;
     border-radius: 20px;
     transition: all 0.7s ease-in;
+    text-align: end;
+    background-color: var(--bron-white);
+    background-image: url("../images/back.png");
+    background-position:  center right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
 }
-
 
 .what-us .vision i , 
 .what-us .vision h2 , 
 .what-us .vision h6 , 
 .what-us .vision p{
-    margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 15px;
 }
 .what-us .vision h2 {
-    color: var(--bron-color);
+    color: var(--home-color);
 
 }
-
+.what-us .vision-left p{
+    margin: auto 70px auto auto;
+}
 .what-us .vision h6 {
-    color: var(--bron-white);
+    color: var(--bron-color);
 
 }
 .what-us .vision i {
@@ -58,24 +121,49 @@
     font-weight: 700;
 }
 
-.what-us .vision:hover {
-    transform: translateY(-10px);
-}
-
-
-@media (max-width: 900px){
-    .what-us .vision {
-        width: 30%;
+@media (max-width: 1420px){
+    .what-us .right {
+    width: 50%;
     }
 }
-@media (max-width: 650px){
-    .what-us .vision {
-        width: 40%;
+@media (max-width: 1040px){
+    .what-us .right {
+    width: 70%;
+    margin-right: 20px;
+    }
+    .what-us .left {
+        width: 70%;
+    }
+
+    .what-us .vision-left {
+            width: 80%;
     }
 }
 
-@media (max-width: 450px){
-    .what-us .vision {
-        width: 80%;
+@media (max-width: 880px){
+    .what-us {
+        flex-direction: column;
+    }
+    .what-us .right {
+        width: 95%;
+        flex-direction: row;
+    }
+    .what-us .left {
+        width: 90%;
+    }
+    .what-us .vis-btn {
+        width: 48%;
+    }
+    .what-us .vis-btn h6{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 580px){
+    .what-us .vis-btn {
+        width: 98%;
+    }
+    .what-us .vision-left {
+        width: 100%;
     }
 }

@@ -5,13 +5,14 @@
 }
 
 .sec-name {
-    padding-top: 100px;
-    background-color: var(--home-color);
+    padding-top: 70px;
+    padding-bottom: 5px;
+    background-color: var(--bron-color);
 }
 
 .sec-name h3 , 
 .sec-name h6 {
-    color: var(--bron-color);
+    color: white;
     text-align: end;
     margin-right: 20px;
     width: 82%;

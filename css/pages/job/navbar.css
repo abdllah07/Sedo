@@ -35,8 +35,8 @@
   float: right;
   font-size: 18px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 300px;
 }
 
 .nav > .nav-links > a {
@@ -44,6 +44,9 @@
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #efefef;
+  font-weight: bold;
+  font-size: 24px;
+  transition: all 0.5s ease ; 
 }
 
 .nav > .nav-links > a:hover {
@@ -54,6 +57,11 @@
   display: none;
 }
 
+@media (max-width:769px) {
+  .nav > .nav-links {
+  right: 100px;
+  }
+}
 @media (max-width:600px) {
   .nav > .nav-btn {
   display: inline-block;
@@ -81,7 +89,7 @@
   position: absolute;
   display: block;
   width: 100%;
-  background-color: var(--home-color);
+  background-color: var(--bron-color);
   height: 0px;
   transition: all 0.3s ease-in;
   overflow-y: hidden;
