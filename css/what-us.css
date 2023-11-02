@@ -204,6 +204,13 @@ background-color:var(--home-color);
     margin-right: 20px;
     }
     .what-us .vision-left {
+        margin-left: 50px;
+        width: 70%;
+        }
+    .what-us .left{
         width: 100%;
+    }
+    .what-us .vision-left p {
+        margin: 0;
     }
 }
