@@ -7,7 +7,7 @@
 .main-title {
     margin: 100px auto;
     border: 2px solid var(--bron-color);
-    padding: 3px 56px;
+    padding: 0px 60px;
     font-size: 30px;
     width: fit-content;
     position: relative;

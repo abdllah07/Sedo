@@ -7,12 +7,12 @@
 .sec-name {
     padding-top: 70px;
     padding-bottom: 5px;
-    background-color: var(--bron-color);
+    background-color: var(--bron-white);
 }
 
 .sec-name h3 , 
 .sec-name h6 {
-    color: white;
+    color: var(--home-color);
     text-align: end;
     margin-right: 20px;
     width: 82%;

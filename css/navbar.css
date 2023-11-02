@@ -44,7 +44,7 @@
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #efefef;
+    color: var(--home-color);
     font-weight: bold;
     font-size: 24px;
     transition: all 0.5s ease ; 
@@ -159,7 +159,16 @@ nav ul li a:hover{
 
 
 /* slider  */
+.carousel-item.fade {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s, transform 0.5s;
+}
 
+.carousel-item.fade.active {
+    opacity: 1;
+    transform: scale(1);
+}
 
 .slider-img img {
     filter: brightness(0.4);

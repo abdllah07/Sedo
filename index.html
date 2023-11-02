@@ -20,9 +20,7 @@
     <title>Sedo</title>
 
     <style>
-        .content {
-             display: none;
-         }
+
      </style>
 </head>
 <body>
@@ -151,7 +149,7 @@
             
 
             <div class="right">
-                <button class="vis-btn" onclick="hideAllButOne(1)">
+                <button class="vis-btn fixed-size-button" onclick="hideAllButOne(1)">
                     <div class="vision">
                         <div class="v-icon">
                             <i class="fa-regular fa-eye"></i>
@@ -162,7 +160,7 @@
                         </div>
                     </div>
                 </button>
-                <button class="vis-btn" onclick="hideAllButOne(2)">
+                <button class="vis-btn fixed-size-button" onclick="hideAllButOne(2)">
                     <div class="vision">
                         <div class="v-icon">
                             <i class="fa-regular fa-eye"></i>
@@ -173,16 +171,18 @@
                 </div>
                     </div>
                 </button>
-                <button class="vis-btn" onclick="hideAllButOne(3)">
+                <button class="vis-btn fixed-size-button" onclick="hideAllButOne(3)">
                     <div class="vision">
-                    
+                        <div class="v-icon">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
                             <div>
                                 <h2>هدفنا</h2>
                                 <h6>أهداف محددة نسعى لتحقيقها</h6>
                             </div>
                     </div>
                 </button>
-                <button class="vis-btn" onclick="hideAllButOne(4)">
+                <button class="vis-btn fixed-size-button" onclick="hideAllButOne(4)">
                     <div class="vision">
                         <div class="v-icon">
                             <i class="fa-regular fa-eye"></i>
@@ -196,7 +196,7 @@
                 </button>
             </div>
 
-            <div class="left">
+            <div class="left fixed-size-left">
                 <div class="vision-left" style="display: flex;" >
                     <i class="fa-regular fa-eye"></i>
                     <h2>رؤيتنا </h2>
@@ -439,16 +439,27 @@
     <!-- Jquery -->
 
     <script>
-        function hideAllButOne(index) {
-            const divs = document.querySelectorAll('.vision-left');
-            for (let i = 0; i < divs.length; i++) {
-                if (i === index - 1) {
-                    divs[i].style.display = 'flex';
-                } else {
-                    divs[i].style.display = 'none';
-                }
-            }
+function hideAllButOne(index) {
+    const divs = document.querySelectorAll('.vision-left');
+    for (let i = 0; i < divs.length; i++) {
+        if (i === index - 1) {
+            divs[i].style.display = 'flex';
+        } else {
+            divs[i].style.display = 'none';
         }
+    }
+
+    // تغيير لون الخلفية عند الضغط على الزر
+    const buttons = document.querySelectorAll('.vis-btn');
+    for (let i = 0; i < buttons.length; i++) {
+        if (i === index - 1) {
+            buttons[i].classList.add('active');
+        } else {
+            buttons[i].classList.remove('active');
+        }
+    }
+}
+
     </script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 

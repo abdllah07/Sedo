@@ -39,7 +39,7 @@ $(document).ready(function(){
 	  if (scroll > 900) {
       $(".nav").css("transition" , "1s");
 
-	    $(".nav").css("background" , "rgba(168,134,111)");
+	    $(".nav").css("background" , "rgba(237 , 209 ,188)");
       $(".nav").css("width" , "100%");
 
 	  }
@@ -119,3 +119,55 @@ const initSlider = () => {
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // تحديد مؤشر الصورة الحالية
+  var currentIndex = 0;
+
+  // احصل على جميع الصور
+  var carouselItems = document.querySelectorAll(".carousel-item");
+
+  // تحديد الزر "التالي" و "السابق"
+  var nextButton = document.querySelector(".carousel-control-next");
+  var prevButton = document.querySelector(".carousel-control-prev");
+
+  // دالة لعرض الصورة التالية
+  function showNextImage() {
+    // إخفاء الصورة الحالية
+    carouselItems[currentIndex].classList.remove("active");
+
+    // زيادة المؤشر بواحد والتحقق من الحد الأقصى
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+
+    // عرض الصورة الجديدة
+    carouselItems[currentIndex].classList.add("active");
+  }
+
+  // دالة لعرض الصورة السابقة
+  function showPrevImage() {
+    // إخفاء الصورة الحالية
+    carouselItems[currentIndex].classList.remove("active");
+
+    // تقليل المؤشر بواحد والتحقق من الحد الأدنى
+    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+
+    // عرض الصورة الجديدة
+    carouselItems[currentIndex].classList.add("active");
+  }
+
+
+
+  // تحديد وقت التأخير لتغيير الصور تلقائيًا (بالميلي ثانية)
+  var interval = 5000;
+
+  // التغيير التلقائي للصور بعد فترة زمنية محددة
+  setInterval(showNextImage, interval);
+});
+
+
+

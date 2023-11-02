@@ -5,7 +5,7 @@ $(document).ready(function(){
 	  if (scroll > 100) {
       $(".nav").css("transition" , "1s");
 
-	  $(".nav").css("background" , "rgba(168,134,111)");
+	  $(".nav").css("background" , "rgba(237 , 209 ,188)");
       $(".nav").css("width" , "100%");
 
 	}

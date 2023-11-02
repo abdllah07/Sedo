@@ -21,28 +21,38 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: end;
-    width: 30%;
-    margin: auto;
+    margin-right: 100px;
     justify-content: space-evenly;
 }
-.what-us  .left{
-    margin: auto;
-    display: flex;
-    height: auto;
+
+.content {
+    display: none;
 }
+
+.vis-btn {
+background-color: #ffffff; 
+}
+
+.vis-btn.active {
+background-color:var(--home-color); 
+}
+
 .what-us .vis-btn{ 
-    width: 90%;
-    padding: 10px;
     margin-bottom: 30px;
-    border: 2px solid #f6f5f5;
-    border-radius: 20px;
+    border: 1px solid #f6f5f5;
+    border-radius: 50px;
     position: relative;
     z-index: 1;
-    transition: 2s;
+    transition: 1s;
     background-image: url("../images/back-black.png");
     background-position:  center left; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
+    width: 400px;
+
 }
+
+
+
 .what-us .vis-btn .vision{
     transition: all 0.5s ease;
     text-align: end;
@@ -51,16 +61,14 @@
     flex-direction: row-reverse;
     align-items: center;
 }
-.what-us .vis-btn .vision .v-icon{
 
-}
 .what-us .vision::after{
     content: "";
     position: absolute;
     width: 0;
     height: 0;
-    border-radius: 20px;
-    background-color: #ededed3a;
+    border-radius: 50px;
+    background-color: var(--home-color);
     left: 50%;
     top: 50%;
     z-index: -999;
@@ -72,6 +80,31 @@
     height: 101%;
     transition: all 0.5s ease;
 }
+
+
+.what-us .left{
+    display: flex;
+    position: relative;
+    background-image: url("../images/back.png");
+    background-position:  center right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+.what-us .left::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url(../images/logo2.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+
+}
+
 .what-us .vision-left{
     width: 60%;
     display: none;
@@ -80,15 +113,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: var(--bron-white) 0px 30px 20px -20px;
+    box-shadow: black 0px 20px 20px -20px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: all 0.7s ease-in;
     text-align: end;
     background-color: var(--bron-white);
-    background-image: url("../images/back.png");
-    background-position:  center right; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+
+    position: relative;
+
 }
 
 .what-us .vision i , 
@@ -99,7 +132,7 @@
     margin-left: 15px;
 }
 .what-us .vision h2 {
-    color: var(--home-color);
+    color: var(--bron-color);
 
 }
 .what-us .vision-left p{
@@ -111,7 +144,7 @@
 }
 .what-us .vision i {
     font-size: 25px;
-    color: var(--home-color);
+    color: var(--bron-color);
 }
 .what-us .vision h2{
     font-weight: bolder;
@@ -121,15 +154,20 @@
     font-weight: 700;
 }
 
+
+
+.fixed-size-left {
+    width: 800px; 
+}
+.fixed-size-button {
+}
+
 @media (max-width: 1420px){
-    .what-us .right {
-    width: 50%;
-    }
+
 }
 @media (max-width: 1040px){
     .what-us .right {
-    width: 70%;
-    margin-right: 20px;
+    margin-right: 70px;
     }
     .what-us .left {
         width: 70%;
@@ -145,7 +183,6 @@
         flex-direction: column;
     }
     .what-us .right {
-        width: 95%;
         flex-direction: row;
     }
     .what-us .left {
@@ -162,6 +199,9 @@
 @media (max-width: 580px){
     .what-us .vis-btn {
         width: 98%;
+    }
+    .what-us .right {
+    margin-right: 20px;
     }
     .what-us .vision-left {
         width: 100%;
