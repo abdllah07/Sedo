@@ -92,23 +92,27 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-  }
-  .services .boxses .box {
+  }  
+  .services .boxses  a{
+    text-decoration: none;
     width: 22%;
-    display: flex;
     padding-top: 20px;
-    justify-content: center;
     margin-bottom: 20px;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
+    border-radius: 10px;
     counter-increment: services;
     position: relative;
     overflow: hidden;
     transition: 0.3s;
-    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    background-color: var(--bron-white);
+    box-shadow: black 0px 20px 20px -20px;
   }
-  .services .boxses .box:hover {
+  .services .boxses .box{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row-reverse;
+  }
+  .services .boxses a:hover {
     transform: translateY(-10px);
     box-shadow: 0 2px 15px rgb(0 0 0 / 30%);
     left: 0;
@@ -133,11 +137,14 @@
   
   .services .boxses .box i {
     color: var(--home-color);
+    font-size: 30px;
+    margin-left: 20px;
   }
   .services .boxses .box h3 {
-    color: var(--bron-color);
+    color: var(--home-color);
+
   }
-  .services .boxses .box .number {
+  /* .services .boxses .box .number {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -195,14 +202,20 @@
     font-weight: bold;
     font-size: 20px;
     padding-right: 10px;
+  } */
+
+  @media (max-width: 1220px) {
+    .services .boxses a {
+      width: 40%;
+    }
   }
   @media (max-width: 768px) {
-    .services .boxses .box {
+    .services .boxses a {
       width: 40%;
     }
   }
   @media (max-width: 480px) {
-    .services .boxses .box {
+    .services .boxses a {
       width: 95%;
     }
   }

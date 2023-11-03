@@ -5,37 +5,39 @@
 }
 
 
-.projects {
+.projects .boxses{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     margin-bottom: 50px;
+
 }
 
 .projects a {
     text-decoration: none;
     overflow: hidden;
-
 }
 
 .projects .box {
     width: 30%;
     padding: 15px;
     background-color: white;
-    box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%),
-      0px 2px 4px 0px rgb(0 0 0 / 12%);
     margin-bottom: 100px;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
+
 }
 
 
 .projects .box img{
     max-width: 100%;
     filter: blur(0.5px) brightness(0.5);
-    transition: all 0.7s ease ;
+    transition: all 0.7s ease;
+    border-radius: 10px;
+
 }
 
 .projects .box h5{
@@ -46,7 +48,8 @@
 }
 
 .projects .box img:hover{
-    transform:  scale(1.4);
+    transform:  scale(1.1);
+    border-radius: 10px;
 
 }
 @media (max-width: 767px) {
