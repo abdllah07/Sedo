@@ -187,21 +187,20 @@
   }
 @media (max-width: 900px){
   .who-us::before {
-    top: 12%;
+    top: 18%;
     height: 5%;
+    width: 61%;
+    left: 16%;
+
   }
     .who-us .who-info .info .i-title{
         width: 80%;
         margin-bottom: 20px;
     }
     .who-us .who-info .images{
-        width: 100%;
-        margin-bottom: 30px;
-        text-align: center;
+      display: none;
     }
-    .who-us .who-info .images img {
-      width: 80%;
-    }
+    
     .who-us .who-info {
         flex-direction: column-reverse;
     }
@@ -221,6 +220,12 @@
       margin-right: 60px;
     }
     .who-us .who-info .images {
-    text-align: end;
+      display: none;
+    }
+    .who-us::before {
+      top: 15%;
+      height: 5%;
+      width: 66%;
+      left: 15%;
     }
 }
