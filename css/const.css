@@ -1,13 +1,16 @@
 :root{
     --home-color:rgb(3, 27 , 63);
     --bron-color:rgba(168,134,111);
-    --bron-white: rgba(237 , 209 ,188)
+    --bron-white: rgba(237 , 209 ,188);
+}
+body{
+
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Noto Sans Arabic', sans-serif;
 }
 .buttons-more{
     text-align: center;

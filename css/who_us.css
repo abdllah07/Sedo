@@ -4,7 +4,12 @@
     --bron-white: rgba(237 , 209 ,188)
 }
 
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
 
 .who-us{
     display: flex;
@@ -228,4 +233,8 @@
       width: 66%;
       left: 15%;
     }
+}
+body{
+  font-family: 'Noto Sans Arabic', sans-serif;
+
 }

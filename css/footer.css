@@ -3,7 +3,16 @@
     --bron-color:rgba(168,134,111);
     --bron-white: rgba(237 , 209 ,188)
 }   
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+
 footer{
+    
     background-color: var(--bron-white);;
     display: flex;
     justify-content: space-evenly;
