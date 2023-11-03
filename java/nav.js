@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   // تحديد وقت التأخير لتغيير الصور تلقائيًا (بالميلي ثانية)
-  var interval = 5000;
+  var interval = 3000;
 
   // التغيير التلقائي للصور بعد فترة زمنية محددة
   setInterval(showNextImage, interval);

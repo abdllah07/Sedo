@@ -180,5 +180,11 @@ nav ul li a:hover{
     }
     
 }
+@media (max-width: 769px){
+    .slider-img img { 
+        height: 50vh;
+    }
+    
+}
 
 
