@@ -96,13 +96,14 @@ footer .icons i {
         margin-right: 10px;
     }
 
-    footer::before{
+    footer::before ,
+    footer::after{
         width: 0;
     }
 }
 
 @media (max-width: 900px){ 
     footer{
-        justify-content: start;
+        justify-content: center;
     }
 }
