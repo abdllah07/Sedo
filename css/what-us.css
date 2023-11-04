@@ -51,19 +51,33 @@ background-color:var(--home-color);
     position: relative;
     z-index: 1;
     transition: 1s;
-    background-image: url("../images/back-black.png");
-    background-position:  center left; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    /* background-image: url("../images/back-black.png");
+    background-position:  center left; 
+    background-repeat: no-repeat;  */
     width: 400px;
 
 }
-
+.what-us .vis-btn::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 15%;
+    height: 95%;
+    opacity: 0.5;
+    background-image: url("../images/vector.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+  }
 
 
 .what-us .vis-btn .vision{
     transition: all 0.5s ease;
     text-align: end;
-    height: 10vh;
+    height: 13vh;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -92,11 +106,11 @@ background-color:var(--home-color);
 .what-us .left{
     display: flex;
     position: relative;
-    background-image: url("../images/back.png");
-    background-position:  center right; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    /* background-image: url("../images/back.png");
+    background-position:  center right; 
+    background-repeat: no-repeat;  */
 }
-.what-us .left::before{
+/* .what-us .left::before{
     content: '';
     display: block;
     position: absolute;
@@ -110,7 +124,7 @@ background-color:var(--home-color);
     background-position: center ;
     background-size: cover;
 
-}
+} */
 
 .what-us .vision-left{
     width: 60%;
@@ -130,7 +144,9 @@ background-color:var(--home-color);
     position: relative;
 
 }
+.what-us  .vision {
 
+}
 .what-us .vision i , 
 .what-us .vision h2 , 
 .what-us .vision h6 , 

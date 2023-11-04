@@ -20,24 +20,9 @@
     margin-bottom: 80px;
     transition: all 1s ease-in-out;
 
-    position: relative;
 }
 
-.who-us::before{
-  content: '';
-  display: block;
-  position: absolute;
-  left:35%;
-  top: 18%;
-  width: 30%;
-  height: 10%;
-  opacity: 1;
-  background-image: url("../images/vector.png");
-  background-repeat: no-repeat;
-  background-position: center ;
-  background-size: cover;
 
-}
 .who-us .title { 
     text-align: end;
     margin-bottom:50px;
@@ -59,8 +44,6 @@
     border-radius: 10px;
     filter: brightness(0.3);
 }
-
-
 .who-us .who-info {
     width: 100%;
     display: flex;
@@ -73,7 +56,6 @@
 .who-us .who-info .info{
     width: 50%;
     margin-left: 20px;
-
 }
 
 .who-us .who-info .info .i-title {
@@ -86,16 +68,29 @@
     border-radius: 10px;
     box-shadow: black 0px 20px 20px -20px;
     margin-top: 30px;
-    background-image: url("../images/back.png");
+    position: relative;
 
-    background-position:  center right; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
 }
+.who-us .who-info .info .i-title::before{
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3%;
+  height: 100%;
+  opacity: 1;
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+}
 
 .who-us .who-info .info .i-title p {
     font-weight: bold;
     font-size: 15px;
+    margin-right: 5px;
 }
 .who-us .who-info .info .i-title i {
     color:var(--home-color);
@@ -109,15 +104,16 @@
 }
 
 .main-title-link {
-    margin: 100px  auto;
-    border: 2px solid var(--bron-color);
-    padding: 3px 56px;
-    font-size: 30px;
-    width: fit-content;
-    position: relative;
-    z-index: 1;
-    transition: 0.3s;
-    border-radius: 10px;
+  text-align: center;
+  width: 50px;
+  margin: 100px auto;
+  border: 2px solid var(--bron-color);
+  font-size: 30px;
+  width: 275px;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+  border-radius: 10px;
   }
   .who-us .buttons {
     display: flex;
@@ -191,13 +187,7 @@
     }
   }
 @media (max-width: 900px){
-  .who-us::before {
-    top: 18%;
-    height: 5%;
-    width: 61%;
-    left: 16%;
 
-  }
     .who-us .who-info .info .i-title{
         width: 80%;
         margin-bottom: 20px;
@@ -227,12 +217,7 @@
     .who-us .who-info .images {
       display: none;
     }
-    .who-us::before {
-      top: 15%;
-      height: 5%;
-      width: 66%;
-      left: 15%;
-    }
+
 }
 body{
   font-family: 'Noto Sans Arabic', sans-serif;

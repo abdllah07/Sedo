@@ -147,7 +147,8 @@
   }
   .services .boxses .box h3 {
     color: var(--home-color);
-
+    width: 213px;
+    text-align: end;
   }
   /* .services .boxses .box .number {
     display: flex;

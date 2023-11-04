@@ -8,8 +8,8 @@
 .nav .logo {
   display: inline-block;
   position: absolute;
-  left: 10px;
-  top: 0px;
+  left: 65px;
+  top: 10px;
   z-index: 2;
 }
 .nav .logo img{
@@ -43,9 +43,9 @@
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: var(--home-color);
+  color: white;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 15px;
   transition: all 0.5s ease ; 
 }
 
