@@ -100,7 +100,7 @@
   }  
   .services .boxses  a{
     text-decoration: none;
-    width: 22%;
+    width: 32%;
     padding-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -209,16 +209,12 @@
     padding-right: 10px;
   } */
 
-  @media (max-width: 1220px) {
+  @media (max-width: 1000px) {
     .services .boxses a {
-      width: 40%;
+      width: 47%;
     }
   }
-  @media (max-width: 768px) {
-    .services .boxses a {
-      width: 40%;
-    }
-  }
+
   @media (max-width: 480px) {
     .services .boxses a {
       width: 95%;

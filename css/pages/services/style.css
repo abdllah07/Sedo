@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    height: 20vh;
+    height: 30vh;
     width: 350px;
     margin-top: 20px;
     transition: all 0.5s ease;
@@ -39,7 +39,7 @@
 }
 .services .serv  .s-title i {
     color: black;
-    font-size: 34px;
+    font-size: 25px;
     background-color: var(--bron-white);
     border-radius: 50%;
     padding: 30px;
