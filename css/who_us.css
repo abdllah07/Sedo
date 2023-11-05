@@ -1,14 +1,14 @@
 :root{
     --home-color:rgb(3, 27 , 63);
     --bron-color:rgba(168,134,111);
-    --bron-white: rgba(237 , 209 ,188)
+    --bron-white1: rgba(237 , 209 ,188);
+    --bron-white:rgba(236, 224, 211);
 }
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans Arabic', sans-serif;
 }
 
 .who-us{
@@ -42,7 +42,6 @@
 .who-us .who-info .images img{
     width: 500px;
     border-radius: 10px;
-    filter: brightness(0.3);
 }
 .who-us .who-info {
     width: 100%;
@@ -55,7 +54,7 @@
 }
 .who-us .who-info .info{
     width: 50%;
-    margin-left: 20px;
+    margin-left: 32px;
 }
 
 .who-us .who-info .info .i-title {
@@ -66,7 +65,7 @@
     background-color: var(--bron-white);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: black 0px 20px 20px -20px;
+    box-shadow: black 0px 13px 20px -20px;
     margin-top: 30px;
     position: relative;
 
@@ -104,25 +103,30 @@
 }
 
 .main-title-link {
-  text-align: center;
-  width: 50px;
-  margin: 100px auto;
-  border: 2px solid var(--bron-color);
-  font-size: 30px;
-  width: 275px;
-  position: relative;
-  z-index: 1;
-  transition: 0.3s;
-  border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    margin: 17px auto;
+    border: 2px solid var(--bron-color);
+    font-size: 30px;
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
   }
+
   .who-us .buttons {
     display: flex;
     width: 700px;
   }
   .main-title-link:hover {
     color: var(--home-color);
-    border: 2px solid var(--home-color);
+    border: 2px solid white ; 
     transition-delay: 0.5s;
+    border-radius: 50%;
   }
   .main-title-link::before {
     content: "";
@@ -135,11 +139,11 @@
   }
   .main-title-link:hover::before {
     z-index: -1;
-    animation: left-move 0.7s linear forwards;
+    animation: left-move 0.4s linear forwards;
   }
   .main-title-link:hover::after {
     z-index: -1;
-    animation: right-move 0.7s linear forwards;
+    animation: right-move 0.4s linear forwards;
   }
   @keyframes left-move {
     50% {
@@ -169,7 +173,6 @@
   }
   .main-title-link::after {
     content: "";
- 
     background-color:var(--bron-color);
     position: absolute;
     border-radius: 50%;
@@ -180,7 +183,9 @@
     color: var(--home-color);
     text-decoration: none;
   }
-
+  .main-title-link a:hover{
+    color: white;
+  }
   @media (max-width: 1030px){
     .who-us .who-info .info .i-title{
       width:90%;
@@ -217,9 +222,5 @@
     .who-us .who-info .images {
       display: none;
     }
-
-}
-body{
-  font-family: 'Noto Sans Arabic', sans-serif;
 
 }

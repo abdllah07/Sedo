@@ -173,3 +173,11 @@ nav ul li a:hover{
 }
 
 
+@media (max-width: 769px){
+
+
+  .nav .logo{
+      left: 10px;
+  }
+  
+}

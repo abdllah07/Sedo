@@ -7,7 +7,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans Arabic', sans-serif;
 }
 .main-title {
     margin: 100px auto;
@@ -17,13 +16,24 @@
     width: fit-content;
     position: relative;
     z-index: 1;
-    transition: 0.3s;
+    border-radius: 10px;
+
+    border-radius: 10px;
   }
-  
+  .main-title p {
+    margin: 0;
+    font-family: cursive;
+}
+  .main-title:hover p {
+    transition: 0s ;
+
+    color: white;
+  }
   .main-title:hover {
     color: var(--home-color);
-    border: 2px solid var(--home-color);
     transition-delay: 0.5s;
+    border-radius: 50%;
+
   }
   .main-title::before {
     content: "";
@@ -38,11 +48,11 @@
   }
   .main-title:hover::before {
     z-index: -1;
-    animation: left-move 0.7s linear forwards;
+    animation: left-move 0.4s linear forwards;
   }
   .main-title:hover::after {
     z-index: -1;
-    animation: right-move 0.7s linear forwards;
+    animation: right-move 0.4s linear forwards;
   }
   @keyframes left-move {
     50% {
@@ -147,9 +157,12 @@
   }
   .services .boxses .box h3 {
     color: var(--home-color);
-    width: 213px;
+    width: 260px;
     text-align: end;
   }
+
+
+
   /* .services .boxses .box .number {
     display: flex;
     width: 100%;

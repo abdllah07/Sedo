@@ -39,7 +39,8 @@ $(document).ready(function(){
 	  if (scroll > 900) {
       $(".nav").css("transition" , "1s");
 
-	    $(".nav").css("background" , "rgba(237 , 209 ,188)");
+	    $(".nav").css("background" , "rgba(236, 224, 211)");
+        $(".nav a").css("color" , "rgb(3, 27 , 63)");
       $(".nav").css("width" , "100%");
 
 	  }

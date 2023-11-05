@@ -1,14 +1,14 @@
 :root{
     --home-color:rgb(3, 27 , 63);
     --bron-color:rgba(168,134,111);
-    --bron-white: rgba(237 , 209 ,188)
+    --bron-white: rgba(237 , 209 ,188);
+    --bron-light:rgba(209, 198,182);
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans Arabic', sans-serif;
 }
 .what-us  button {
     background-color: white;
@@ -41,9 +41,13 @@ background-color: #ffffff;
 }
 
 .vis-btn.active {
-background-color:var(--home-color); 
+background-color:var(--bron-white); 
+color:white;
 }
-
+.vis-btn.active .vision h2 , 
+.vis-btn.active .vision h6 {
+    color: var(--home-color);
+}
 .what-us .vis-btn{ 
     margin-bottom: 30px;
     border: 1px solid #f6f5f5;
@@ -54,19 +58,19 @@ background-color:var(--home-color);
     /* background-image: url("../images/back-black.png");
     background-position:  center left; 
     background-repeat: no-repeat;  */
-    width: 400px;
+    width: 450px;
 
 }
-.what-us .vis-btn::before{
+.vis-btn.active::before{
     content: '';
     display: block;
     position: absolute;
-    left: 10px;
+    left: 0px;
     top: 5px;
     width: 15%;
     height: 95%;
-    opacity: 0.5;
-    background-image: url("../images/vector.png");
+    opacity: 1;
+    background-image: url("../images/vision-btn.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -82,14 +86,21 @@ background-color:var(--home-color);
     flex-direction: row-reverse;
     align-items: center;
 }
-
+.what-us .vis-btn .vision div{
+    margin-right: 50px;
+}
+.what-us .vis-btn .vision:hover div h2 , 
+.what-us .vis-btn .vision:hover div h6{
+    color: var(--home-color);
+    transition: all 0.5s ease-in;
+}
 .what-us .vision::after{
     content: "";
     position: absolute;
     width: 0;
     height: 0;
     border-radius: 50px;
-    background-color: var(--home-color);
+    background-color: var(--bron-white);
     left: 50%;
     top: 50%;
     z-index: -999;
@@ -156,13 +167,17 @@ background-color:var(--home-color);
 }
 .what-us .vision h2 {
     color: var(--bron-color);
+    font-size: 26px;
 
 }
 .what-us .vision-left p{
     margin: auto 70px auto auto;
 }
 .what-us .vision h6 {
+    font-size: 19px;
     color: var(--bron-color);
+    font-family: 'Cairo';
+    font-weight: 300;
 
 }
 .what-us .vision i {
@@ -228,7 +243,7 @@ background-color:var(--home-color);
     }
     .what-us .vision-left {
         margin-left: 28px;
-        width: 75%;
+        width: 85%;
         }
     .what-us .left{
         width: 100%;

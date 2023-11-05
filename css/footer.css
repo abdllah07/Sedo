@@ -1,13 +1,13 @@
 :root{
     --home-color:rgb(3, 27 , 63);
     --bron-color:rgba(168,134,111);
-    --bron-white: rgba(237 , 209 ,188)
+    --bron-white1: rgba(237 , 209 ,188);
+    --bron-white:rgba(236, 224, 211);
 }   
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans Arabic', sans-serif;
 }
 
 
@@ -74,6 +74,10 @@ footer .discription{
 footer .discription h2{
     font-weight: bolder;
     color: var(--home-color);
+    font-size: 26px;
+}
+footer .discription p {
+    font-size: 20px;
 }
 footer .icons a {
     text-decoration: none;
@@ -105,5 +109,16 @@ footer .icons i {
 @media (max-width: 900px){ 
     footer{
         justify-content: center;
+    }
+}
+
+@media (max-width: 500px){ 
+    footer .discription h2 {
+        font-size: 18px;
+        width: 100%;
+    }
+  
+    footer .discription p {
+        font-size: 15px;
     }
 }
